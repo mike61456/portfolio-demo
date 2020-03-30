@@ -1,16 +1,16 @@
 body {
-    background-color: rgb(114, 125, 155
-    );    
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-    
+    background-color: #006273;
+background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+  
 }
+
 #navBar {
-    width: 100%;
+    width: 75%;
     height: 60px;
-    background-color: darkslategray;
+    background-color: white;
     position: absolute;
-    top:0;
-    transition: 0.3s;
+    top:10px;
+    transition: 2s;
     }
 
 #navBar:hover {
@@ -19,14 +19,13 @@ body {
 }
 
 .listItem {
-    list-style-type: none;
     display: inline-block;
     float: right;
-    margin-right: 16px;
+    margin-right: 50px;
 }
 
 .listItem a {
-    color: lightgrey;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     
@@ -41,6 +40,14 @@ body {
 
 }
 
+#navtext {
+    float: right;
+}
+
+#navtext:hover {
+    color: white;
+}
+
 header {
 height: 70vh;
 min-height: 600px;
@@ -49,23 +56,57 @@ justify-content: space-evently;
 align-items: center;
 }
 
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 75%;
+    height: 40px;
+  }
+  
+
 #imageBox {
 height: 300px;
 width: 300px;
 background-image: url(./profile.jpg);
 background-position: center;
 background-size: cover;
-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-
-
+box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
 
 }
 
 #greetingBox {
-    color: darkslategray;
+    color:black;
+    float: left;
+  padding: 160px;
+  
 }
 
 #greetingBox h1 {
-    font-size: 40px;
+    font-size: 80px;
 }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 5s;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 75%;
+  }
+
+
+  
 

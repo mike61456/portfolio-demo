@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael</title>
-
+    <title>A Page about me!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
         <!-- Navbar -->
-        <nav id="navbar">
-            <ul class="navLinks">
-                <li id="brand" class="listItem">
-                    <a href="#">Adam Jayne</a>
-                </li>
-                <li class="listItem">
-                    <a href="#about">About</a>
-                </li>
-                <li class="listItem">
-                    <a href="#social">Social Media</a>
-                </li>
-            </ul>
-        </nav>
-    
-    
+<nav id="navBar">
+    <ul class="navLinks">
+        <li id="brand" class="listItem" ><a href="https://www.youtube.com/user/ElevenFiftyAcademy/videos">Michael</a></li>
+        <li id="navtext" class="listItem"><a href="#about">About me?</a></li>
+        <li id="navtext" class="listItem"><a href="#social">Social Media?</a></li>
+    </ul>
+</nav>
         <!-- Header Section -->
-        <header>
-            <div id="imageBox">
-    
-            </div>
-            <div id="greetingBox">
-                <h1>Hello</h1>
-                <p>I am an Instructor/Devloper</p>
-            </div>
-        </header>
-    
+<header>
+    <div id="imageBox"></div>
+    <div id="greetingBox"><h1>Welcome</h1><p>Apparently, I am a parrot learning to make web pages.</p></div>
+</header>
         <!-- About Section -->
-
+<button class="accordion" id="about">About Me</button><div class="panel">
+        <p><h2>About Me</h2>ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur<br> aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <BR> Check out Eleven Fifty Academy @ <a href=https://www.youtube.com/user/ElevenFiftyAcademy/videos>Youtube</a></div><br><br><br><br><br><br>
         <!-- Social Media -->
-
+        <button class="accordion" id="social">Social Media</button><div class="panel">
+        <p><h3> Social Media</h3>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" Did you know you can still create a myspace page? <a href=http://www.myspace.com> It's never too late to try it out!</a></p></div>
         <!-- Footer -->
-
+        <footer>
+            <p>You have reached the bottom. <a href=https://youtu.be/2mUBHsxoK7I?t=15>Watch a funny video about a parrot!</a></p>
+        </footer>
+       
 </body>
 </html>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
